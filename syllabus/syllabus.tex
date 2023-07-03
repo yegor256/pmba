@@ -1,0 +1,172 @@
+% (The MIT License)
+%
+% Copyright (c) 2023 Yegor Bugayenko
+%
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this software and associated documentation files (the 'Software'), to deal
+% in the Software without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software is
+% furnished to do so, subject to the following conditions:
+%
+% The above copyright notice and this permission notice shall be included in all
+% copies or substantial portions of the Software.
+%
+% THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+% SOFTWARE.
+
+\documentclass[nobrand,anonymous,nodate,nosecurity]{huawei}
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{href-ul}
+\usepackage{ffcode}
+\newcommand\REG{$^{\tiny{\textsf{\textregistered}}}$}
+\newcommand\TM{$^{\tiny{\textsf{TM}}}$}
+\begin{document}
+
+{\sffamily{\bfseries\Large Pain of OOP}\\
+Series of lectures by \href{https://www.yegor256.com}{Yegor Bugayenko} to be presented
+to students of \href{https://innopolis.university/en/}{Innopolis University} in 2023.
+% and \href{https://www.youtube.com/playlist?list=PLaIsQH4uc08woJKRAA7mmjs9fU0jeKjjM}{video recorded}}
+
+% The entire set of slide decks is in \href{https://github.com/yegor256/ssd16}{yegor256/ssd16} GitHub repository.
+
+\begin{abstract}
+Nowadays, Agile is probably the most popular keyword among managers of software development projects.
+However, Agile is not a management framework but merely a set of principles that are supposed to guide
+managers who are already equipped with a framework, such as
+RUP\REG{} by IBM\REG{} or MSF\REG{} by Microsoft\REG{}.
+Moreover, there is PMBOK\TM{} by PMI\REG{}, which postulates that project management is a very deterministic
+exercise driven by its strict rules and even laws.
+This course is an attempt to build a bridge between
+a pretty boring project management formalism
+and
+best practices of Agile/XP.
+\end{abstract}
+
+% \section*{Introduction}
+
+\textbf{What is the goal?}\\
+The primary objective of the course is to help students understand the fundamental
+principles of project management, as they are explained by PMBOK\TM{}, and
+apply said principles to realistic use cases in commercial and open source
+ software development projects.
+
+\textbf{Who is the teacher?}\\
+Yegor is developing software for more than 30 years, being a hands-on programmer
+(see his GitHub account: \href{https://github.com/yegor256}{@yegor256})
+and a manager of other programmers. At the moment Yegor is a director
+of an R\&D laboratory in Huawei. His primary research focus is
+software quality problems. Some of the lectures he has recently presented
+at some software conferences could be found at
+\href{https://www.youtube.com/channel/UCr9qCdqXLm2SU0BIs6d_68Q}{his YouTube channel}.
+Yegor also published a \href{https://www.yegor256.com/books.html}{few books}
+and wrote a \href{https://www.yegor256.com/contents.html}{blog} about software engineering
+and object-oriented programming.
+Yegor previously thought a few courses in
+Innopolis University (Kazan, Russia)
+and HSE University (Moscow, Russia),
+for example,
+\href{https://github.com/yegor256/ssd16}{Software Systems Design (2021)},
+\href{https://github.com/yegor256/eqsp}{Ensuring Quality in Software Projects (2022)},
+and
+\href{https://github.com/yegor256/ppa}{Practical Program Analysis (2023)}
+(all videos are available).
+
+\textbf{Why this course?}\\
+Agile, as a philosophy of software development, may be very effective if being used
+by those who understand the fundamentals of project management, such as scope management,
+cost management, and risk management. Unfortunately, while the popularity of Agile
+grows, the awareness of project management, as a domain of science, decreases among
+both fresh graduates and seasoned software engineers and managers.
+This course may help increase the awareness excluding most of the boredom that
+is traditionally associated with the classic management discipline.
+
+\textbf{What's the methodology?}\\
+Each lecture is a discussion of a few realistic situations in a software development
+team with an intent to identify positive and negative scenarios and then make
+conclusions that will allow students to understand their own management decisions better.
+
+\newpage
+\section*{Course Structure}
+
+Prerequisites to the course (it is expected that a student knows this):
+
+\begin{itemize}
+\item How to write code
+\item How to design software
+\end{itemize}
+
+After the course a student \emph{hopefully} will understand:
+
+\begin{itemize}
+\item How to draw a Gantt Chart and what for?
+\item How to fire an under-performing team member?
+\item How to create and maintain a Risk List?
+\item How to identify risks in a project?
+\item How to do quantitative and qualitative risk analysis?
+\item How to report project status to a project sponsor?
+\item How to estimate project costs?
+\item How to calculate project budget?
+\item How to avoid ``Gold Platting''?
+\item How to decompose project scope into work packages?
+\item How to measure performance of each team member?
+\item How to optimize critical path using CPM?
+\item How to work with a traceability matrix?
+\item How to specify requirements unambiguously?
+\item How to organize the work of a Change Control Board?
+\item How to motivate programmers for higher productivity?
+\item How to structure a software development contract?
+\end{itemize}
+
+% \newpage
+% \section*{Lectures}
+
+% The following topics are discussed:
+
+% \newlist{lectures}{enumerate}{10}
+% \setlist[lectures]{label*=\arabic*.}
+% \begin{lectures}
+% \item Algorithms
+% \item Static Methods
+% \item Getters
+% \item Setters
+% \item ``-er'' suffix
+% \item NULL references
+% \item Type casting and reflection
+% \item Inheritance
+% \end{lectures}
+
+\newpage
+\section*{Grading}
+
+At the exam, each student will pick a ``scenario'' and will have to
+explain what is the right behavior of a manager in this particular case.
+The student will have to argue for the plan suggested. The quality of
+the argument will impact the final score.
+
+The attendance is tracked at the lectures. If 75\% of all lectures were attended,
+it guarantees ``C'' (otherwise ignored).
+
+% \newpage
+% \section*{Learning Material}
+
+% The following books are highly recommended to read (in no particular order):
+
+% \begin{multicols}{2}\small\raggedright
+% {David West}, \emph{Object Thinking}, 2004\\[3pt]
+% {David West}, \emph{Design Thinking}, 2017\\[3pt]
+% {Robert Martin}, \emph{Clean Code}, 2008\\[3pt]
+% {Steve McConnell}, \emph{Code Complete}, 1993\\[3pt]
+% {Yegor Bugayenko}, \emph{Elegant Objects}, 2016\\[3pt]
+% Blog posts of Yegor Bugayenko, \href{https://www.yegor256.com/tag/oop}{on his blog}\\[3pt]
+% Video lectures of Yegor Bugayenko \href{https://www.youtube.com/playlist?list=PLaIsQH4uc08yw2CsNv5OV30GfKE6XVGii}{on YouTube}\\[3pt]
+% Object Thinking meetup presentations, \href{https://www.youtube.com/watch?v=yT6oO28wEik&list=PLaIsQH4uc08yetzX86w1pPck1QtGEy_ik}{on YouTube}\\[3pt]
+% \end{multicols}
+
+\end{document}
