@@ -29,12 +29,12 @@
 \newcommand\TM{$^{\tiny{\textsf{TM}}}$}
 \begin{document}
 
-{\sffamily{\bfseries\Large Pain of OOP}\\
+{\sffamily{\bfseries\Large Project Management Beyond Agile}\\
 Series of lectures by \href{https://www.yegor256.com}{Yegor Bugayenko} to be presented
 to students of \href{https://innopolis.university/en/}{Innopolis University} in 2023.
 % and \href{https://www.youtube.com/playlist?list=PLaIsQH4uc08woJKRAA7mmjs9fU0jeKjjM}{video recorded}}
 
-% The entire set of slide decks is in \href{https://github.com/yegor256/ssd16}{yegor256/ssd16} GitHub repository.
+The entire set of slide decks is in \href{https://github.com/yegor256/pmba}{yegor256/pmba} GitHub repository.
 
 \begin{abstract}
 Today, Agile has emerged as a widely-used term among managers overseeing software development projects. Nonetheless, it's important to note that Agile is not a management framework per se, but rather a set of guiding principles intended for managers already utilizing an established framework, such as IBM's RUP\REG{} or Microsoft's MSF\REG{}. Furthermore, the PMBOK™ by PMI\REG{} posits that project management is a deterministic endeavor, regulated by stringent rules and even laws. This course seeks to form a connection between the traditionally dry formalism of project management and the progressive practices of Agile/XP.
@@ -102,49 +102,124 @@ After the course a student \emph{hopefully} will understand:
 \item How to structure a software development contract?
 \end{itemize}
 
-% \newpage
-% \section*{Lectures}
+\newpage
+\section*{Lectures}
 
-% The following topics are discussed:
+The following topics are discussed:
 
-% \newlist{lectures}{enumerate}{10}
-% \setlist[lectures]{label*=\arabic*.}
-% \begin{lectures}
-% \item Algorithms
-% \item Static Methods
-% \item Getters
-% \item Setters
-% \item ``-er'' suffix
-% \item NULL references
-% \item Type casting and reflection
-% \item Inheritance
-% \end{lectures}
+\newlist{lectures}{enumerate}{10}
+\setlist[lectures]{label*=\arabic*.}
+\begin{lectures}
+\item Integration Management
+    \begin{itemize}
+    \item How to read PMBOK?
+    \item How to identify and specify the problem?
+    \item How to establish project rules?
+    \item How to organize decision making process?
+    \item How to embrace the chaos?
+    \item How to be a good manager?
+    \end{itemize}
+\item Scope Management
+    \begin{itemize}
+    \item How to set Definition of Done (DoD)?
+    \item How to decompose a project to tasks?
+    \item How to avoid Gold Platting?
+    \item How to blame the product not yourself?
+    \item How to avoid micro-management?
+    \end{itemize}
+\item Time Management
+    \begin{itemize}
+    \item How to avoid Daily Stand-ups?
+    \item How to stay away from Gantt Charts?
+    \item How to avoid playing Planning Poker?
+    \end{itemize}
+\item Cost Management
+    \begin{itemize}
+    \item How to estimate project budget?
+    \item How to pay what they deserve?
+    \item How to pay 10x to 10x programmers?
+    \item How to stop paying for your team education?
+    \end{itemize}
+\item Quality Management
+    \begin{itemize}
+    \item How to differentiate QA from testing?
+    \item How to organize code reviews?
+    \item How to get rid of altruism?
+    \item How to aim for speed instead of quality?
+    \end{itemize}
+\item \emph{Human} Resource Management
+    \begin{itemize}
+    \item How to not spend two hours for an interview?
+    \item How to motivate people?
+    \item How to measure productivity of a dev team?
+    \item How to measure productivity of a research team?
+    \item How to boost team morale?
+    \item How to fire painfully?
+    \end{itemize}
+\item Communications management
+    \begin{itemize}
+    \item How to avoid technical meetings?
+    \item How to use Ticket Tracking Systems?
+    \item How to avoid emails?
+    \item How to work remotely?
+    \item How to punish your team?
+    \end{itemize}
+\item Risk management
+    \begin{itemize}
+    \item How to build a risk list?
+    \item How to prevent failures?
+    \item How to respect and not trust your team?
+    \end{itemize}
+\item Procurement Management
+    \begin{itemize}
+    \item How to supervise an external team?
+    \item How to avoid hourly pay?
+    \item How to control their quality?
+    \item How to measure productivity of an external team?
+    \end{itemize}
+\item Stakeholder Management
+    \begin{itemize}
+    \item How to be a good office slave (for your boss)?
+    \item How to make your boss happy?
+    \item How to be honest with a customer?
+    \item How to bill incrementally?
+    \item How to pass PMI exam?
+    \end{itemize}
+\end{lectures}
 
 \newpage
 \section*{Grading}
 
-At the exam, each student will pick a ``scenario'' and will have to
-explain what is the right behavior of a manager in this particular case.
-The student will have to argue for the plan suggested. The quality of
-the argument will impact the final score.
+Students have to form groups of 2--4 people in each one.
+
+Each group should pick a research topic from the list suggested by the teacher
+at the first lecture. A group is allowed to pick its own topic, if approved
+by the teacher at the first lecture.
+
+Each group should do a research and write a research paper, according
+to this \href{https://www.yegor256.com/2022/08/24/research-paper-template.html}{recommendation}.
+The length of the pager may be no longer than four pages
+\href{https://ctan.org/pkg/acmart}{acmart/sigplan} format (two columns).
+
+The paper must be submitted to \href{http://www.icse-conferences.org/}{ICSE} or
+\href{https://www.esec-fse.org/}{ESEC/FSE} conference
+(student tracks and workshops are allowed).
+
+The is no exam at the end of the course. Instead, the quality of the paper
+will be evaluated by the teacher.
 
 The attendance is tracked at the lectures. If 75\% of all lectures were attended,
 it guarantees ``C'' (otherwise ignored).
 
-% \newpage
-% \section*{Learning Material}
+\newpage
+\section*{Learning Material}
 
-% The following books are highly recommended to read (in no particular order):
+The following books are highly recommended to read (in no particular order):
 
-% \begin{multicols}{2}\small\raggedright
-% {David West}, \emph{Object Thinking}, 2004\\[3pt]
-% {David West}, \emph{Design Thinking}, 2017\\[3pt]
-% {Robert Martin}, \emph{Clean Code}, 2008\\[3pt]
-% {Steve McConnell}, \emph{Code Complete}, 1993\\[3pt]
-% {Yegor Bugayenko}, \emph{Elegant Objects}, 2016\\[3pt]
-% Blog posts of Yegor Bugayenko, \href{https://www.yegor256.com/tag/oop}{on his blog}\\[3pt]
-% Video lectures of Yegor Bugayenko \href{https://www.youtube.com/playlist?list=PLaIsQH4uc08yw2CsNv5OV30GfKE6XVGii}{on YouTube}\\[3pt]
-% Object Thinking meetup presentations, \href{https://www.youtube.com/watch?v=yT6oO28wEik&list=PLaIsQH4uc08yetzX86w1pPck1QtGEy_ik}{on YouTube}\\[3pt]
-% \end{multicols}
+\begin{multicols}{2}\small\raggedright
+{Rita Mulcahy}, \emph{PMI Exam: Preparation Course}, 2018\\[3pt]
+{Yegor Bugayenko}, \emph{Code Ahead}, 2019\\[3pt]
+Blog posts of Yegor Bugayenko, \href{https://www.yegor256.com/tag/management}{on his blog}\\[3pt]
+\end{multicols}
 
 \end{document}
