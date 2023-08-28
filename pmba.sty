@@ -68,26 +68,17 @@
   \end{pptMiddle}}%
 }
 
-\newcommand\pmbaDisclaimer{{%
-  \color{grey}\ttfamily\footnotesize
-  All visual and text materials presented in this slidedeck are
-  either originally made by the author or taken from public Internet
-  sources, such as website. Copyright belongs to their
-  respected authors.\par
-}}
-
 \newcommand\pmbaTitlePage[1]{%
-  \pptTitle{\thetitle}{\thesubtitle}\par
+  \pptTitle{\thetitle}{}\par
   {\scshape Yegor Bugayenko}\par
   Lecture \##1 out of 10 \br
-  90 minutes\par
-  \pmbaDisclaimer{}
+  90 minutes
 }
 
 \newcommand\nospell[1]{#1}
 
 \AtBeginDocument{%
-  \pptLeft{\thetitle{}: \thesubtitle}%
+  \pptLeft{\thetitle{}}%
   \pptRight{@yegor256}%
 }
 
