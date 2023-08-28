@@ -1,0 +1,78 @@
+% (The MIT License)
+%
+% Copyright (c) 2022-2023 Yegor Bugayenko
+%
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this software and associated documentation files (the 'Software'), to deal
+% in the Software without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software is
+% furnished to do so, subject to the following conditions:
+%
+% The above copyright notice and this permission notice shall be included in all
+% copies or substantial portions of the Software.
+%
+% THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+% SOFTWARE.
+
+\documentclass{article}
+\usepackage{../pmba}
+\newcommand*\thetitle{Integration Management}
+\newcommand*\thesubtitle{...}
+\begin{document}
+
+\newcommand\pmbaQuestion[5]{\plush{#1\par\begin{enumerate}\item #2 \item #3 \item #4 \item #5 \end{enumerate}}}
+
+\plush{\pmbaTitlePage{1}}
+
+% manager is not seen
+% PMBOK is the basis, Agile is fun
+% process is
+
+\pmbaQuestion
+  {Your team just \emph{released} a working version of a software product. The customer is \emph{happy}, but he has a few \emph{new} feature requests. As a project manager, what do you do?}
+  {Implement them}
+  {Ask for more money}
+  {Refuse, play ``hard to get''}
+  {Close the project}
+
+\pmbaQuestion
+  {At a job interview, they ask you: ``What was the most \emph{successful} project where you were a project manager?''. What do you answer?}
+  {``The one that made \$1 million to the customer''}
+  {``The one that helped save people's lives''}
+  {``The one where I made six-figure annual bonus''}
+  {``I don't know...''}
+
+\pmbaQuestion
+  {You are a \emph{project manager}, a customer asks you: "Will you release a working software in three months, with all features implemented?'' You answer:}
+  {``Well, I don't know...''}
+  {``I believe so! We will do our best!''}
+  {``Maybe, if you double the budget to cover all risks''}
+  {``Yes, of course!''}
+
+\pmbaQuestion
+  {Close to the end of the project a programmer asks you whether she will get a bonus when the project \emph{finishes} successfully. What do you answer?}
+  {``I will do my best to get it for you!''}
+  {``It depends on many factors''}
+  {``Do you think you deserve it?''}
+  {``Of course, not!''}
+
+\pptToc
+
+\plush{\pptChapter{Notation}}
+
+\plush{\pptChapter[Read]{To read}}
+
+\plush{
+  \href{https://www.yegor256.com/2016/05/24/who-is-project-manager.html}{Who Is a Project Manager?} (2016)\par
+  \href{https://www.yegor256.com/2016/02/18/holacracy-autocracy.html}{Holacracy or Autocracy? Both!} (2016)\par
+  \href{https://www.yegor256.com/2015/06/08/deadly-sins-software-project.html}{Seven Deadly Sins of a Software Project} (2015)\par
+  \href{https://www.yegor256.com/2015/09/22/micromanagement.html}{Are You a Micromanager?} (2015)\par
+}
+
+\end{document}

@@ -56,7 +56,7 @@
 
 \newcommand\br{\newline}
 
-\newcommand\innoDisclaimer{{%
+\newcommand\pmbaDisclaimer{{%
   \color{grey}\ttfamily\footnotesize
   All visual and text materials presented in this slidedeck are
   either originally made by the author or taken from public Internet
@@ -64,19 +64,12 @@
   respected authors.\par
 }}
 
-\newcommand\poopTitlePage[1]{%
+\newcommand\pmbaTitlePage[1]{%
   \pptTitle{\thetitle}{\thesubtitle}\par
   {\scshape Yegor Bugayenko}\par
   Lecture \##1 out of 8 \br
   90 minutes\par
-  \innoDisclaimer{}
-}
-
-% 1: cover file
-% 2: author
-% 3: title
-\newcommand\pooBook[3]{%
-  \pptPic{0.4}{books/#1} \br ``#3'' by {\scshape #2}
+  \pmbaDisclaimer{}
 }
 
 \newcommand\nospell[1]{#1}
