@@ -56,7 +56,17 @@
 
 \newcommand\br{\newline}
 
-\newcommand\pmbaQuestion[5]{\plush{#1\par\begin{enumerate}\item #2 \item #3 \item #4 \item #5 \end{enumerate}}}
+\usepackage{listofitems}
+\newcounter{question}
+\newcommand\pmbaQuestion[6]{%
+  \plush{\begin{pptMiddle}%
+  \stepcounter{question}%
+  \textbf{\textcolor{orange}{\Large\thequestion.}} #1\par%
+  \begin{enumerate}\item #2 \item #3 \item #4 \item #5 \end{enumerate}\par%
+  \readlist*\tags{#6}%
+  \foreachitem\tag\in\tags[]{\textcolor{lightgray}{\#\tag{}} }%
+  \end{pptMiddle}}%
+}
 
 \newcommand\pmbaDisclaimer{{%
   \color{grey}\ttfamily\footnotesize
