@@ -28,6 +28,25 @@
 \plush{\pmbaTitlePage{8}}
 
 \plush{
+\pptBanner{Management \st{Triangle} Rectangle}\par
+\begin{tikzpicture}[node distance=5em,
+  every path/.style={draw=black, line width=.1em},
+  every node/.style={font={\Large\ttfamily}, draw=black, rectangle, outer sep=.5em}]
+\node[draw=none] (center) {};
+\node[above of=center] (scope) {Scope};
+\node[below of=center] (risks) {Risks};
+\node[right of=center] (time) {Time};
+\node[left of=center] (cost) {Cost};
+\path (scope) -- (time);
+\path (time) -- (cost);
+\path (cost) -- (scope);
+\path (risks) -- (time);
+\path (risks) -- (cost);
+\path (risks) -- (scope);
+\end{tikzpicture}
+}
+
+\plush{
   \pptBanner{Read this:}
 }
 
