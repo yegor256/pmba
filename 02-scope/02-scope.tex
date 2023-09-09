@@ -29,9 +29,7 @@
 
 \plush{
 \pptBanner{Management Triangle}\par
-\begin{tikzpicture}[node distance=6em,
-  every path/.style={draw=black, line width=.1em},
-  every node/.style={font={\Large\ttfamily}, draw=black, rectangle, outer sep=.5em}]
+\begin{tikzpicture}[graph]
 \node (scope) {Scope};
 \node[below right of=scope] (time) {Time};
 \node[below left of=scope] (cost) {Cost};
@@ -39,10 +37,10 @@
 \path (time) -- (cost);
 \path (cost) -- (scope);
 \end{tikzpicture}\par
-Your responsibility, as a project manager, is to control that all three elements of the
-triangle are in sync: when one of them changes you have to change the other two. If you don't
+Your responsibility, as a project manager, is to \emph{control} that all three elements of the
+triangle are \emph{in sync}: when one of them changes, you have to change the other two. If you don't
 know how much the project will cost, how long will take, or how much functionality
-it will implement---you are not a project manager.
+it will implement---you are not a project manager. Maybe a leader, a mentor, or ... a scapegoat.
 }
 
 \pmbaQuestion
@@ -87,15 +85,15 @@ it will implement---you are not a project manager.
 
 \pmbaQuestion
   {After six months of hard work, your team releases the product to customer's servers. The customer says: ``This is not what I wanted :('' Whose fault is it?}
-  {\emph{Testers} didn't verify it earlier}
-  {The \emph{customer} didn't explain what they want}
   {The \emph{project manager} didn't validate it earlier}
+  {The \emph{customer} didn't explain what they wanted}
+  {\emph{Testers} didn't verify it earlier}
   {It's \emph{nobody's} fault! We don't blame! We learn and improve!}
   {V\&V}
 
 \pmbaQuestion
   {A project of \emph{one year} and \emph{five programmers} can be decomposed into how many Work Packages?}
-  {I don't know}
+  {Nobody knows}
   {Seven}
   {25 sprints, 5 coders, 1 WPs per week \(\to\) 250 WPs}
   {Hundreds}
@@ -103,10 +101,10 @@ it will implement---you are not a project manager.
 
 \pmbaQuestion
   {Which estimate of project scope is the most reasonable?}
-  {300,000 \emph{Hits of Code} in the repository}
   {100 \emph{Function Points} implemented}
   {500 \emph{Pull Requests} merged}
   {50,000 \emph{Lines of Code} written}
+  {10,000 \emph{hours} of hard work, including weekends}
   {estimate}
 
 \plush{

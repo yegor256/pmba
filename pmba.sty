@@ -46,15 +46,12 @@
 \RequirePackage{soul}
 \renewcommand\emph[1]{\ul{#1}}
 \tikzstyle{graph} = [
-  node distance=0,
-  every node/.style={draw=black,circle,minimum width=2.2em,thick},
-  every edge/.append style={draw=black,thick,-{Latex[length=2.5mm,width=2mm]},every node/.style={above}},
-  every loop/.append style={draw=black,thick,-{Latex[length=2.5mm,width=2mm]},every node/.style={above}},
+  node distance=6em,
+  every node/.style={font={\Large\ttfamily}, outer sep=.5em, draw=black, rectangle, minimum width=2.2em, line width=.1em},
+  every path/.style={draw=black, line width=.1em},
+  every edge/.append style={draw=black, line width=.1em, -{Latex[length=2.5mm,width=2mm]}, every node/.style={above}},
+  every loop/.append style={draw=black, line width=.1em, -{Latex[length=2.5mm,width=2mm]}, every node/.style={above}},
 ]
-\tikzstyle{terminal} = [rectangle,minimum height=1.5em]
-\tikzstyle{note} = [draw=none,rectangle,midway,font={\small\color{orange}}]
-
-\newcommand\br{\newline}
 
 \usepackage{listofitems}
 \newcounter{question}
@@ -71,7 +68,7 @@
 \newcommand\pmbaTitlePage[1]{%
   \pptTitle{\thetitle}{}\par
   {\scshape Yegor Bugayenko}\par
-  Lecture \##1 out of 10 \br
+  Lecture \##1 out of 10 \newline
   80 minutes
 }
 
