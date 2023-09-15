@@ -22,13 +22,103 @@
 
 \documentclass{article}
 \usepackage{../pmba}
+\usepackage{svg}
 \newcommand*\thetitle{Time Management}
 \begin{document}
 
 \plush{\pmbaTitlePage{3}}
 
+\pmbaQuestion
+  {A customer asks you to estimate how long will it take for your team to implement a new feature. What do you do?}
+  {You call a meeting to discuss}
+  {You ask your architect}
+  {You send out an Excel spreadsheet asking to fill it out}
+  {You estimate it, yourself}
+  {estimate}
+
+\pmbaQuestion
+  {You ask a programmer: ``How many days will it take to implement the X feature?'' Which answer you would expect and appreciate most of all?}
+  {12}
+  {10--14}
+  {More than 10}
+  {10--12--14}
+  {PERT}
+
+\pmbaQuestion
+  {A potential client asks you, how much would it take to make a Tetris mobile app, what answer would be the most accurate?}
+  {A month}
+  {More than a month}
+  {From one week to four months}
+  {I don't know}
+  {cone, rolling-wave}
+
+\pmbaQuestion
+  {Some of your programmers complain that they sometimes don't know what to do, which leads to wasted time and frustration. How do you fix this?}
+  {Use sync-up meetings every morning (Daily Standups)}
+  {Use ticket tracking systems}
+  {Use regular emails to everybody}
+  {Use shared Google Spreadsheet, with a project schedule inside}
+  {schedule}
+
+\pmbaQuestion
+  {There are 5 activities, taking 2 days each, how long will the entire project take?}
+  {10 days}
+  {5 days}
+  {2 days}
+  {I don't know}
+  {pdm}
+
+\pmbaQuestion
+  {What do you see on the picture?\pptPin{\pptPic{1.5}{cpm-sample.jpg}}}
+  {Gantt Chart}
+  {Critical Path Method}
+  {Monte Carlo Analysis}
+  {PERT Diagram}
+  {diagram}
+
+\pmbaQuestion
+  {A customer asks you to complete the project one month faster. How can you do this, as a project manager?}
+  {Smoothies and Free Snacks}
+  {Carrots and Sticks}
+  {Crashing and Fast Tracking}
+  {Paying and Praying}
+  {cpm}
+
+\pmbaQuestion
+  {Which of the following belong to the S.M.A.R.T. acronym?}
+  {Magnificient}
+  {Ambitious}
+  {Repetitive}
+  {Timeboxed}
+  {cpm}
+
+\plush{
+\pptBanner{Critical Path Method}\par
+\pptPic{.8}{cpm.pdf}\par
+{\scriptsize The picture is taken from \href{https://en.wikipedia.org/wiki/Critical_path_method}{Wikipedia}.\par}}
+
+\plush{
+  \pptBanner{Homework:}
+  ``A \emph{Project Schedule} presents linked activities with planned dates, durations
+  milestones, and resources. At a minimum, the project schedule includes a planned start
+  date and planned finish date for each activity. The project schedule presentation
+  may be presented in summary form, sometimes referred to as the master schedule or
+  milestone schedule, or presented in detail.''
+  --- PMBOK
+}
+
 \plush{
   \pptBanner{Read this:}
+  Wikipedia:
+    \href{https://en.wikipedia.org/wiki/Cone_of_Uncertainty}{Cone of Uncertainty},
+    \href{https://en.wikipedia.org/wiki/Rolling-wave_planning}{Rolling-wave planning},
+    \href{https://en.wikipedia.org/wiki/Three-point_estimation}{Three-point estimation},
+    \href{https://en.wikipedia.org/wiki/COCOMO}{COCOMO}\par
+  \href{http://www.technoparkcorp.com/process/cost/rom/}{Rough Order Of Magnitude Estimate} (2014)\par
+  \href{https://www.yegor256.com/2020/11/03/daily-reports.html}{The Pain of Daily Reports} (2020)\par
+  \href{https://www.yegor256.com/2015/01/08/morning-standup-meetings.html}{Daily Stand-Up Meetings Are a Good Tool for a Bad Manager} (2015)\par
+  \href{https://www.yegor256.com/2019/09/03/injection-of-guilt.html}{Daily Stand-up Injection of Guilt}\par
+  \href{https://www.yegor256.com/2015/06/02/how-to-estimate-software-cost.html}{How Much For This Software?} (2015)\par
 }
 
 \end{document}
