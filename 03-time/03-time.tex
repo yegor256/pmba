@@ -38,27 +38,27 @@ Project Management \emph{Process Groups} and \emph{Knowledge Areas} Mapping:\par
 \end{pptWide}}
 
 \pmbaQuestion
-  {A customer asks you to estimate how long will it take for your team to implement a new feature. What do you do?}
-  {You call a meeting to discuss}
-  {You ask your architect}
-  {You send out an Excel spreadsheet, asking to fill it out}
-  {You estimate it, yourself}
-  {estimate}
-
-\pmbaQuestion
-  {You ask a programmer: ``How many days will it take to implement the X feature?'' Which answer you would expect and appreciate most of all?}
+  {You ask a programmer: ``How many days will it take to implement a new feature?'' Which answer you would expect and appreciate most of all?}
   {12}
   {10--14}
   {More than 10}
   {10--12--14}
-  {PERT}
+  {pert, tpe}
+
+\pmbaQuestion
+  {A customer asks you to estimate how long will it take for your team to implement a new feature. What do you do?}
+  {You call a meeting to discuss}
+  {You ask your architect}
+  {You send out an Excel spreadsheet, asking programmers to fill it out}
+  {You estimate it, yourself}
+  {estimate}
 
 \pmbaQuestion
   {A potential client asks you, how much would it take to make a Tetris mobile app, what answer would be the most accurate?}
   {A month}
   {More than a month}
   {From one week to four months}
-  {I don't know}
+  {Until you run out of money}
   {cone, rolling-wave}
 
 \pmbaQuestion
@@ -74,14 +74,20 @@ Project Management \emph{Process Groups} and \emph{Knowledge Areas} Mapping:\par
   {10 days}
   {5 days}
   {2 days}
-  {I don't know}
+  {2--10 days}
   {pdm}
 
 \pmbaQuestion
-  {What do you see on the picture?\pptPin{\pptPic{.96}{cpm-sample.jpg}}}
+  {What do you see on the picture?
+    \tikz[remember picture,overlay] \node[anchor=south east] at (current page text area.south east) {%
+        \begin{minipage}{0.6\textwidth}%
+          \raggedleft\includegraphics[width=\textwidth]{cpm-sample.png}
+        \end{minipage}%
+      };
+    }
   {Gantt Chart}
   {Critical Path Method}
-  {Monte Carlo Analysis}
+  {Project Schedule}
   {PERT Diagram}
   {diagram}
 
@@ -91,10 +97,10 @@ Project Management \emph{Process Groups} and \emph{Knowledge Areas} Mapping:\par
   {Carrots and Sticks}
   {Crashing and Fast Tracking}
   {Paying and Praying}
-  {cpm}
+  {cpm, schedule-compression}
 
 \pmbaQuestion
-  {Which of the following belongs to the S.M.A.R.T. acronym?}
+  {Which of the following belongs to the S.M.A.R.T. acronym (pick one)?}
   {Magnificent}
   {Ambitious}
   {Repetitive}
