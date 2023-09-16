@@ -28,24 +28,55 @@
 \plush{\pmbaTitlePage{4}}
 
 \pmbaQuestion
-  {How to calculate Cost Perforamnce Indicator (CPI)?}
-  {CPI = EV / ...}
-  {}
-  {}
-  {}
-  {earned-value}
+  {In a one year project, how often do you ask your customer to sign-off the budget?}
+  {After every weekend}
+  {After every pull request}
+  {After every change request}
+  {After every phone call}
+  {baseline}
 
 \pmbaQuestion
-  {You are a project, a programmer asks you to pay \$500 for a training course about Machine Learning. What do you answer?}
+  {How to calculate Cost Performance Indicator (CPI)?}
+  {\(\texttt{CPI} = \texttt{EV} / \texttt{AC}\)} % CPI
+  {\(\texttt{CPI} = \texttt{EV} / \texttt{PV}\)} % SPI
+  {\(\texttt{CPI} = \texttt{EV} - \texttt{PV}\)} % schedule variance
+  {\(\texttt{CPI} = \texttt{EV} - \texttt{AC}\)} % cost variance
+  {evm}
+
+\pmbaQuestion
+  {You are a project manager, a programmer asks you to pay \$500 for a training course about Machine Learning. What do you answer?}
   {Definitely, not!}
   {I have to ask our CFO and the customer}
   {Only if you work on weekends}
-  {}
-  {earned-value}
+  {How ML is related to our project?}
+  {school}
 
+\pmbaQuestion
+  {You just interviewed two programmers and now have to explain to the CEO that you want to hire the one that is more expensive; what is the best argument to use?}
+  {She has longer experience}
+  {She is more enthusiastic about our project}
+  {She has bigger StackOverflow reputation}
+  {Her projects have more GitHub stars}
+  {value}
+
+\plush{
+\pptBanner{Earned Value Method}\par
+\pptPic{.8}{evm.png}\par
+{\scriptsize The picture is taken from PMBOK5, Figure 7-12, page 219}}
+
+\plush{
+\pptBanner{Cost and Staffing Levels}\par
+\pptPic{.8}{cost-levels.png}\par
+{\scriptsize The picture is taken from PMBOK5, Figure 2-8, page 38}}
+
+\plush{
+\pptBanner{Cost of Changes}\par
+\pptPic{.8}{cost-of-changes.png}\par
+{\scriptsize The picture is taken from PMBOK5, Figure 2-9, page 39}}
 
 \plush{
   \pptBanner{Read this:}
+  % How much do you cost?
 }
 
 \end{document}
