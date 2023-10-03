@@ -4,7 +4,6 @@ _minted-*/
 *.idx
 *.ilg
 *.ind
-*.pdf
 *.bbl
 *.bcf
 *.blg
@@ -22,3 +21,14 @@ _minted-wp/
 *.crumbs
 package/
 svg-inkscape/
+01-integration/01-integration.pdf
+02-scope/02-scope.pdf
+03-time/03-time.pdf
+04-cost/04-cost.pdf
+05-quality/05-quality.pdf
+06-resources/06-resources.pdf
+07-communications/07-communications.pdf
+08-risk/08-risk.pdf
+09-procurement/09-procurement.pdf
+10-stakeholder/10-stakeholder.pdf
+syllabus/syllabus.pdf
