@@ -29,35 +29,42 @@
 
 % reserves: management reserve too, contingency reserve
 
+\plush{\pptQuote{rita-mulcahy.jpg}{...}{Rita Mulcahy, \textit{Risk Management, Tricks of the Trade for Project Managers}, 2003}}
+
 \plush{
-\pptBanner{Management \st{Triangle} Rectangle}\par
+\pptBanner{Management \st{Rectangle} Pentagon}\par
 \begin{tikzpicture}[node distance=5em,
   every path/.style={draw=black, line width=.1em},
   every node/.style={font={\Large\ttfamily}, draw=black, rectangle, outer sep=.5em}]
 \node[draw=none] (center) {};
 \node[above of=center] (scope) {Scope};
-\node[below of=center] (risks) {Risks};
+\node[below left of=center] (risks) {Risks};
+\node[below right of=center] (quality) {Quality};
 \node[right of=center] (time) {Time};
 \node[left of=center] (cost) {Cost};
 \path (scope) -- (time);
 \path (time) -- (cost);
 \path (cost) -- (scope);
+\path (quality) -- (time);
+\path (quality) -- (cost);
+\path (quality) -- (scope);
 \path (risks) -- (time);
 \path (risks) -- (cost);
 \path (risks) -- (scope);
+\path (risks) -- (quality);
 \end{tikzpicture}
 }
 
 \pmbaQuestion
   {You just found out that one of your key programmers posted his resume on a job board. What do you do immediately?}
+  {Nothing}
   {Update risk list}
   {Post a vacation}
   {Offer him a raise}
-  {Nothing}
   {staff}
 
 \pmbaQuestion
-  {What is the cost of a risk, if \emph{probablity} is 0.8, \emph{impact} is 0.7, and \emph{effect} is \pounds1,000?}
+  {What is the cost of a risk, if \emph{probability} is 0.8, \emph{impact} is 0.7, and \emph{effect} is \pounds1,000?}
   {\pounds1,500}
   {\pounds560}
   {\pounds800}
@@ -69,7 +76,7 @@
   {Opportunity}
   {Residual Risk}
   {Threat}
-  {?}
+  {Secondary Risk}
   {register}
 
 \pmbaQuestion
@@ -79,6 +86,30 @@
   {Many-one-one}
   {One-one-one}
   {format}
+
+\pmbaQuestion
+  {At a technical meeting, a programmer says: "I think the use of this framework will lead to problems in the future". What do you answer?}
+  {``Be positive, negativity is not welcome here''} % ignore
+  {``Can we prevent them?''} % mitigate
+  {``OK, let's use another one''} % avoid
+  {``Big problems?''} % accept
+  {staff}
+
+\pmbaQuestion
+  {A new architect replaces the previous one and tells you that there is a serious security flaw in the system. What do you do?}
+  {Ask him to \emph{fix} it immediately}
+  {Ask him to \emph{not disclose} this information to anyone}
+  {Ask him to \emph{estimate} the risk of attack}
+  {Nothing}
+  {identification}
+
+\pmbaQuestion
+  {The estimated duration of the project is 20 months. There is a \emph{3x9} risk that a few key engineers may leave the company soon. If this happens, the project will be delayed by another 15 months. What project duration you should report now to the customer?}
+  {\(20 + 15 \times 0.3 = 24.5\)}
+  {\(20 + 15 \times 0.3 + 10 = 34.5\)}
+  {\(20 + 15 \times 0.3 \times 0.9 = 24.05\)}
+  {\(20 + 15 = 35\)}
+  {contingency, unknown-unknowns}
 
 \pmbaQuestion
   {There is a \emph{risk} that the server will break. If this happens, a new one will cost another \$5,000. How to prepare the customer for this?}
@@ -98,14 +129,12 @@
 
 \plush{
   \pptBanner{Read this:}
-  Risk Management by Rita Mulcahy\par
-  \href{}{} ()\par
-  \href{}{} ()\par
-  \href{}{} ()\par
-  \href{}{} ()\par
-  \href{}{} ()\par
-  \href{}{} ()\par
-  \href{}{} ()\par
+  Rita Mulcahy, \textit{Risk Management, Tricks of the Trade for Project Managers}, 2003\par
+  \href{https://www.yegor256.com/2019/05/14/cause-risk-effect.html}{0rsk.com: Cause + Risk + Effect} (2019)\par
+  Narendra K. Shrivastava,
+    \href{https://www.pmi.org/learning/library/model-risk-contingency-reserve-9310}{A model to develop and use risk contingency reserve} (2014)\par
+  Elizabeth Harrin,
+    \href{https://www.projectmanagement.com/blog-post/5806/management-reserves-and-contingency-reserves--what-s-the-difference-}{Management reserves and contingency reserves: what’s the difference?} (2012)\par
 }
 
 \end{document}
