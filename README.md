@@ -2,11 +2,9 @@
 
 [![latexmk](https://github.com/yegor256/pmba/actions/workflows/latexmk.yml/badge.svg?branch=master)](https://github.com/yegor256/pmba/actions/workflows/latexmk.yml)
 
-**THE COURSE IS CURRENTLY UNDER CONSTRUCTION!**
-
 There are slides for my series of lectures for [Innopolis University](https://innopolis.university/) (Kazan, Russia).
 
-All recorded videos (so far) are in [this YouTube playlist](https://www.youtube.com/playlist?list=PLaIsQH4uc08x_T-Aelduv3Zf0DWRx40pq).
+All recorded videos are in [this YouTube playlist](https://www.youtube.com/playlist?list=PLaIsQH4uc08x_T-Aelduv3Zf0DWRx40pq).
 
 All compiled slide decks in PDF are [here](https://yegor256.github.io/pmba/).
 
