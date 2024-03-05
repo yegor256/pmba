@@ -8,6 +8,8 @@ All recorded videos are in [this YouTube playlist](https://www.youtube.com/playl
 
 All compiled slide decks in PDF are [here](https://yegor256.github.io/pmba/).
 
+Research questions [are here](https://gist.github.com/yegor256/3d04cb381d3df26aa99e965e20cf11ef).
+
 To compile everything just run:
 
 ```bash
