@@ -1,0 +1,9 @@
+[submodule "bibliography"]
+	path = bibliography
+	url = https://github.com/yegor256/bibliography
+[submodule "faces"]
+	path = faces
+	url = https://github.com/yegor256/faces
+[submodule "lecture-notes"]
+	path = lecture-notes
+	url = https://github.com/yegor256/lecture-notes

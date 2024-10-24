@@ -20,50 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-SHELL := /bin/bash
+GITHUB=yegor256/pmba
+PLAYLIST=PLaIsQH4uc08x_T-Aelduv3Zf0DWRx40pq
 
-.SHELLFLAGS = -e -o pipefail -c
-.ONESHELL:
-
-DIRS := $(wildcard [0-9][0-9]-*/.) syllabus
-
-all: latexmk package
-
-latexmk:
-	for d in $(DIRS); do
-		cd $${d} && latexmk -pdf && cd ..
-	done
-
-lacheck:
-	for d in $(DIRS); do
-		cd $${d} && lacheck *.tex && cd ..
-	done
-
-package: latexmk
-	mkdir -p package
-	for d in $(DIRS); do
-		cp $${d}/*.pdf package
-	done
-	cd package
-	(
-		for f in $$(ls *.pdf); do
-			echo "<p><a href='$${f}'>$${f}</a></p>"
-		done
-		echo "<p>Compiled on: $$(date).</p>"
-		echo "<p>LaTeX sources are in <a href='https://github.com/yegor256/pmba'>GitHub</a>.</p>"
-		echo "<p>Videos are in <a href='https://www.youtube.com/playlist?list=PLaIsQH4uc08x_T-Aelduv3Zf0DWRx40pq'>YouTube</a>.</p>"
-	) > index.html
-
-copy:
-	for d in $(DIRS); do
-		cp .latexmkrc $${d}
-		cp .texsc $${d}
-	done
-
-clean:
-	for d in $(DIRS); do
-		cd $${d}
-		latexmk -C
-		rm -rf _minted*
-		cd ..
-	done
+include lecture-notes/makefile.defs
