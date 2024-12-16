@@ -2,7 +2,6 @@
 --ignore=href,ffcode
 --ignore=ff,nospell,citet,citep
 --ignore=pptPic:pp
---ignore=pptQuote:p
---ignore=pptQuote:p
---ignore=pptSnippet:p
---ignore=innoBook:p
+--ignore=lnQuote:p
+--ignore=lnSnippet:p
+--ignore=lnTitlePage:ppp
