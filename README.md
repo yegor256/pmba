@@ -2,12 +2,18 @@
 
 [![latexmk](https://github.com/yegor256/pmba/actions/workflows/latexmk.yml/badge.svg?branch=master)](https://github.com/yegor256/pmba/actions/workflows/latexmk.yml)
 
+> [!NOTE]
+> All visual and text materials presented in
+> this slidedeck are either originally made by the author or taken from public
+> Internet sources, such as website. Copyright belongs to their respected
+> authors.
+
 There are slides for my series of lectures for
 [Innopolis University](https://innopolis.university/) (Kazan, Russia).
 
 All recorded videos are in [this YouTube playlist][playlist].
 
-All compiled slide decks in PDF are [here](https://yegor256.github.io/pmba/).
+All compiled slide decks [in PDF](https://yegor256.github.io/pmba/).
 
 Research questions are
 [published](https://gist.github.com/yegor256/3d04cb381d3df26aa99e965e20cf11ef)
@@ -31,10 +37,5 @@ You need to have
 and
 [`texsc`](https://rubygems.org/gems/texsc)
 installed.
-
-**Disclaimer**: All visual and text materials presented in
-this slidedeck are either originally made by the author or taken from public
-Internet sources, such as website. Copyright belongs to their respected
-authors.
 
 [playlist]: https://www.youtube.com/playlist?list=PLaIsQH4uc08x_T-Aelduv3Zf0DWRx40pq
