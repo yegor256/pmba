@@ -1,6 +1,7 @@
 # Project Management Beyond Agile
 
 [![latexmk](https://github.com/yegor256/pmba/actions/workflows/latexmk.yml/badge.svg?branch=master)](https://github.com/yegor256/pmba/actions/workflows/latexmk.yml)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/pmba/blob/master/LICENSE.txt)
 
 > [!NOTE]
 > All visual and text materials presented in
