@@ -9,8 +9,9 @@ All recorded videos are in [this YouTube playlist][playlist].
 
 All compiled slide decks in PDF are [here](https://yegor256.github.io/pmba/).
 
-Research questions
-[are here](https://gist.github.com/yegor256/3d04cb381d3df26aa99e965e20cf11ef).
+Research questions are
+[published](https://gist.github.com/yegor256/3d04cb381d3df26aa99e965e20cf11ef)
+too.
 
 To compile everything just run:
 
