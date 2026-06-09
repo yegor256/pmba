@@ -9,23 +9,23 @@
 \lnTitlePage{2}{10}{7G0dE7Zxew4}
 
 \plush{
-\pptBanner{Management Triangle}\par
-\begin{tikzpicture}[graph]
-\node (scope) {Scope};
-\node[below right of=scope] (time) {Time};
-\node[below left of=scope] (cost) {Cost};
-\path (scope) -- (time);
-\path (time) -- (cost);
-\path (cost) -- (scope);
-\end{tikzpicture}\par
-Your responsibility, as a project manager, is to \emph{control} that all three elements of the
-triangle are \emph{in sync}: when one of them changes, you have to change the other two. If you don't
-know how much the project will cost, how long it will take, or how much functionality
-it will implement---you are not a project manager. Maybe a leader, a mentor, or ... a scapegoat.
-}
+  \pptBanner{Management Triangle}\par
+  \begin{tikzpicture}[graph, node distance=5em]
+  \node (scope) {Scope};
+  \node[below right of=scope] (time) {Time};
+  \node[below left of=scope] (cost) {Cost};
+  \path (scope) -- (time);
+  \path (time) -- (cost);
+  \path (cost) -- (scope);
+  \end{tikzpicture}\par
+  Your responsibility, as a project manager, is to \emph{control} that all three elements of the
+  triangle are \emph{in sync}: when one of them changes, you have to change the other two. If you don't
+  know how much the project will cost, how long it will take, or how much functionality
+  it will implement---you are not a project manager. Maybe a leader, a mentor, or ... a scapegoat.
+  }
 
 \pmbaQuestion
-  {Even though it was not required by the customer, a programmer suggests implementing an additional feature in the product, because it is obvious that users will love it; what do you say, as a PM?}
+  {Even though it was not required by the customer, a \emph{programmer} suggests implementing an additional feature in the product, because it is obvious that users will love it; what do you say, as a PM?}
   {``Definitely not!''}
   {``Maybe we should discuss with the customer first?''}
   {``Only if it doesn't delay all other features''}
@@ -33,7 +33,7 @@ it will implement---you are not a project manager. Maybe a leader, a mentor, or 
   {gold-platting}
 
 \pmbaQuestion
-  {Which definition of a task for a programmer sounds perfect for you?}
+  {Which definition of a task for a \emph{\st{programmer} agent} sounds perfect for you?}
   {``Make sure \ff{FooTest\#test15()} passes in the \ff{master} branch!''}
   {``Fix the build, make sure it's green!''}
   {``Together with the team, resolve the problem ASAP!''}
@@ -49,7 +49,7 @@ it will implement---you are not a project manager. Maybe a leader, a mentor, or 
   {use-case}
 
 \pmbaQuestion
-  {A customer asks you how much work is left to be done. Where do you find this information?}
+  {A customer asks you how much \emph{work} is left to be done. Where do you find this information?}
   {You ask your team}
   {Use Cases}
   {Backlog}
