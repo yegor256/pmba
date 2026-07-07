@@ -10,35 +10,39 @@
 
 \lnQuote
   {rita-mulcahy}
-  {When you have done risk management on a project, your project will go smoother and faster, with significantly fewer complications, because avoidable problems were solved before they happened.}
+  {When you have done risk management on a project,
+    your project will go smoother and faster, with significantly
+    fewer complications, because avoidable problems
+    were solved before they happened.}
   {rita2009pmp}
 
 \plush{
-\pptBanner{Management \st{Rectangle} Pentagon}\par
-\begin{tikzpicture}[node distance=5em,
-  every path/.style={draw=black, line width=.1em},
-  every node/.style={font={\Large\ttfamily}, draw=black, rectangle, outer sep=.5em}]
-\node[draw=none] (center) {};
-\node[above of=center] (scope) {Scope};
-\node[below left of=center] (risks) {Risks};
-\node[below right of=center] (quality) {Quality};
-\node[right of=center] (time) {Time};
-\node[left of=center] (cost) {Cost};
-\path (scope) -- (time);
-\path (time) -- (cost);
-\path (cost) -- (scope);
-\path (quality) -- (time);
-\path (quality) -- (cost);
-\path (quality) -- (scope);
-\path (risks) -- (time);
-\path (risks) -- (cost);
-\path (risks) -- (scope);
-\path (risks) -- (quality);
-\end{tikzpicture}
-}
+  \pptBanner{Management \st{Rectangle} Pentagon}\par
+  \begin{tikzpicture}[node distance=5em,
+    every path/.style={draw=black, line width=.1em},
+    every node/.style={font={\Large\ttfamily}, draw=black, rectangle, outer sep=.5em}]
+  \node[draw=none] (center) {};
+  \node[above of=center] (scope) {Scope};
+  \node[below left of=center] (risks) {Risks};
+  \node[below right of=center] (quality) {Quality};
+  \node[right of=center] (time) {Time};
+  \node[left of=center] (cost) {Cost};
+  \path (scope) -- (time);
+  \path (time) -- (cost);
+  \path (cost) -- (scope);
+  \path (quality) -- (time);
+  \path (quality) -- (cost);
+  \path (quality) -- (scope);
+  \path (risks) -- (time);
+  \path (risks) -- (cost);
+  \path (risks) -- (scope);
+  \path (risks) -- (quality);
+  \end{tikzpicture}
+  }
 
 \pmbaQuestion
-  {You just found out that one of your key programmers posted his resume on a job board. What do you do immediately?}
+  {You just found out that one of your key programmers posted
+    his resume on a job board. What do you do \emph{immediately}?}
   {Nothing}
   {Update risk list}
   {Post a vacancy}
@@ -46,7 +50,8 @@
   {staff}
 
 \pmbaQuestion
-  {What is the cost of a risk, if \emph{probability} is 0.8, \emph{impact} is 0.7, and \emph{effect} is \pounds1,000?}
+  {What is the cost of a risk, if \emph{probability} is 0.8,
+    \emph{impact} is 0.7, and \emph{effect} is \pounds1,000?}
   {\pounds1,500}
   {\pounds560}
   {\pounds800}
@@ -54,7 +59,8 @@
   {quantitative}
 
 \pmbaQuestion
-  {What is the name of a risk with a \emph{negative value} of the \emph{impact}?}
+  {What is the name of a risk with a \emph{negative value}
+    of the \emph{impact}?}
   {Opportunity}
   {Residual Risk}
   {Threat}
@@ -62,7 +68,7 @@
   {register}
 
 \pmbaQuestion
-  {What is the relation of elements in the cause-risk-effect format?}
+  {What is the relation of elements in the \emph{cause-risk-effect} format?}
   {Many-one-many}
   {Many-many-many}
   {Many-one-one}
@@ -70,7 +76,9 @@
   {format}
 
 \pmbaQuestion
-  {At a technical meeting, a programmer says: "I think the use of this framework will lead to problems in the future". What do you answer?}
+  {At a technical meeting, a programmer says: "I think the use
+    of this framework \emph{will} lead to problems in the future".
+    What do you answer?}
   {``Be positive, negativity is not welcome here''} % ignore
   {``Can we prevent them?''} % mitigate
   {``OK, let's use another one''} % avoid
@@ -78,7 +86,9 @@
   {staff}
 
 \pmbaQuestion
-  {A new architect replaces the previous one and tells you that there is a serious security flaw in the system. What do you do?}
+  {A new architect replaces the previous one and tells you
+    that there is a \emph{serious} security flaw in the system.
+    What do you do?}
   {Ask him to \emph{fix} it immediately}
   {Ask him to \emph{not disclose} this information to anyone}
   {Ask him to \emph{estimate} the risk of attack}
@@ -86,7 +96,11 @@
   {identification}
 
 \pmbaQuestion
-  {The estimated duration of the project is 20 months. There is a \emph{3x9} risk that a few key engineers may leave the company soon. If this happens, the project will be delayed by another 15 months. What project duration should you report now to the customer?}
+  {The estimated duration of the project is 20 months.
+    There is a \emph{3x9} risk that a few key engineers
+    may leave the company soon. If this happens, the project
+    will be delayed by another 15 months. What project duration
+    should you report now to the customer?}
   {\(20 + 15 \times 0.3 = 24.5\)}
   {\(20 + 15 \times 0.3 + 10 = 34.5\)}
   {\(20 + 15 \times 0.3 \times 0.9 = 24.05\)}
@@ -94,7 +108,9 @@
   {contingency, unknown-unknowns}
 
 \pmbaQuestion
-  {There is a \emph{risk} that the server will break. If this happens, a new one will cost another \$5,000. How to prepare the customer for this?}
+  {There is a \emph{risk} that the server will break.
+    If this happens, a new one will cost another \$5,000.
+    How to prepare the customer for this?}
   {Ask him to pay \$5K upfront, refund later}
   {Put \$5K into contingency reserve}
   {Put \$5K into management reserve}
@@ -107,7 +123,7 @@
   are recorded. It contains the outcomes of the other risk management processes as they are
   conducted, resulting in an increase in the level and type of information contained in the
   risk register over time.'' --- PMBOK5
-}
+  }
 
 \plush{
   \pptBanner{Read this:}
@@ -117,6 +133,6 @@
     \href{https://www.pmi.org/learning/library/model-risk-contingency-reserve-9310}{A model to develop and use risk contingency reserve} (2014)\par
   Elizabeth Harrin,
     \href{https://www.projectmanagement.com/blog-post/5806/management-reserves-and-contingency-reserves--what-s-the-difference-}{Management reserves and contingency reserves: what’s the difference?} (2012)\par
-}
+  }
 
 \end{document}
